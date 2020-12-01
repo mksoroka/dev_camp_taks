@@ -33,4 +33,5 @@ module.exports = {
     mult,
     pow,
     max,
+    mod
 };
