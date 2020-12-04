@@ -16,5 +16,16 @@
   "bugs": {
     "url": "https://github.com/mksoroka/dev_camp_taks/issues"
   },
-  "homepage": "https://github.com/mksoroka/dev_camp_taks#readme"
+  "homepage": "https://github.com/mksoroka/dev_camp_taks#readme",
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "husky": "^4.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test",
+      "...": "..."
+    }
+  }
 }
