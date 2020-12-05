@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/mksoroka/dev_camp_taks/issues"
   },
-  "homepage": "https://github.com/mksoroka/dev_camp_taks#readme"
+  "homepage": "https://github.com/mksoroka/dev_camp_taks#readme",
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "husky": "^4.3.4"
+  }
 }
+
