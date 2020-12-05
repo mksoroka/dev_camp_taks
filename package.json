@@ -16,5 +16,17 @@
   "bugs": {
     "url": "https://github.com/mksoroka/dev_camp_taks/issues"
   },
-  "homepage": "https://github.com/mksoroka/dev_camp_taks#readme"
+  "homepage": "https://github.com/mksoroka/dev_camp_taks#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint": "^7.15.0",
+    "eslint-plugin-react": "^7.21.5",
+    "husky": "^4.3.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "./node_modules/.bin/eslint"
+    }
+  }
 }
