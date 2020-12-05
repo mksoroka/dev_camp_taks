@@ -7,11 +7,11 @@
     "start": "node src/index.js",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix --color",
-    "test": "echo \"Error: All in\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test"
+      "pre-commit": "npm run lint"
     }
   },
   "repository": {
