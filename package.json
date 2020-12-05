@@ -6,12 +6,12 @@
   "scripts": {
     "start": "node src/index.js",
     "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix --color"
+    "lint:fix": "eslint ./src --fix --color",
+    "test": "echo"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test",
-      "pre-push": "npm test"
+      "pre-commit": "npm test"
     }
   },
   "repository": {
