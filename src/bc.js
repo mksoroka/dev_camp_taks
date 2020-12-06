@@ -25,7 +25,7 @@ function max(a, b) {
     return a > b ? a : b;
 }
 
-
+let module;
 module.exports = {
     add,
     sub,

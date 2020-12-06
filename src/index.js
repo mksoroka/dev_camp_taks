@@ -1,4 +1,4 @@
-const bc = require('./bc');
+import bc from './bc';
 
 console.log(bc.add(1, 2));
 
