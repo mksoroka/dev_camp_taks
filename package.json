@@ -4,7 +4,9 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:run": "npx eslint src",
+    "lint:fix": "npx eslint --fix src"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,18 @@
   "bugs": {
     "url": "https://github.com/mksoroka/dev_camp_taks/issues"
   },
-  "homepage": "https://github.com/mksoroka/dev_camp_taks#readme"
+  "homepage": "https://github.com/mksoroka/dev_camp_taks#readme",
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "husky": "^4.3.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:run"
+    }
+  }
 }
